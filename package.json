@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "npx wdio run wdio.conf.js",
-    "allure:generate": "allure generate allure-results --clean",
-    "allure:open": "allure open allure-report",
-    "allure": "allure generate allure-results --clean && allure open allure-report"
+    "allure:generate": "npx allure generate allure-results -o allure-report",
+    "allure:open": "npx allure open allure-report",
+    "allure": "npx allure generate allure-results -o allure-report && npx allure open allure-report",
+    "clean:report": "if exist allure-report rmdir /s /q allure-report"
   },
   "keywords": [],
   "author": "",

@@ -11,7 +11,7 @@ exports.config = {
 
   capabilities: [
     {
-      platformName: "Android",
+      "platformName": "Android",
       "appium:automationName": "UiAutomator2",
       "appium:deviceName": "Android Emulator",
       
